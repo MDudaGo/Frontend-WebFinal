@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { funcionarioService } from '../services/api'; // Ajusta conforme o teu ficheiro api.js
+import { funcionarioService } from '../services/api'; 
 
 export default function Funcionarios() {
   const [funcionarios, setFuncionarios] = useState([]);
@@ -24,14 +24,14 @@ export default function Funcionarios() {
   };
 
   const cadastrar = async () => {
-    // Validação básica para garantir que os campos principais foram preenchidos
+    
     if (!nome || !cpf) return alert("Nome e CPF são obrigatórios!");
 
     try {
-      // 2. Envia os dados estruturados para o teu backend
+      
       await funcionarioService.criar({ nome, cpf, endereco, telefone });
       
-      // Limpa os campos após o sucesso
+      
       setNome('');
       setCpf('');
       setEndereco('');
