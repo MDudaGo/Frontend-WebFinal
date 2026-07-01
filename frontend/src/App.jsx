@@ -10,7 +10,7 @@ function App() {
   const [pagina, setPagina] = useState('inicio');
 
   return (
-    <div style={{ fontFamily: 'Arial', padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ fontFamily: 'Arial', padding: '20px', maxWidth: '100%', margin: '0 auto' }}>
       <Menu setPagina={setPagina} />
       <hr />
 
