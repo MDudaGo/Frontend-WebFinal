@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  padding: 0 24px;
 }
 
 h1, h2 {
